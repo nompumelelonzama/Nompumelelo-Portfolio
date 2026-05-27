@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nompumelelo Blessing Nzama — Portfolio</title>
+  <meta name="description" content="Software Developer | AI Enthusiast | IT Graduate — South Africa" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌊</text></svg>" />
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<!-- ═══════════════════════════════════════════
+     NAVIGATION
+════════════════════════════════════════════ -->
+<nav class="nav">
+  <a href="#hero" class="nav-logo">
+    <span>NBN</span><span>Portfolio</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#hero"           class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ═══════════════════════════════════════════
+     HERO
+════════════════════════════════════════════ -->
+<main>
+<section id="hero">
+  <div>
+    <div class="hero-badge">
+      <span class="dot"></span> Available for Opportunities
+    </div>
+
+    <div class="profile-ring">
+      <img src="profile.jpg" alt="Nompumelelo Blessing Nzama — Graduation Photo" />
+    </div>
+
+    <h1 class="hero-name">
+      Nompumelelo<br/>Blessing Nzama
+    </h1>
+
+    <div class="hero-typewriter">
+      <span id="typewriter"></span><span class="cursor">|</span>
+    </div>
+
+    <p class="hero-bio">
+      Adaptable Information Technology graduate with skills in software development, AI-powered applications,
+      data analysis, and modern web technologies. Passionate about creating impactful digital solutions and
+      continuously growing in the tech industry.
+    </p>
+
+    <div class="hero-ctas">
+      <a href="#projects" class="btn btn-primary">🚀 View Projects</a>
+      <a href="mailto:nompumelelonzama14@gmail.com" class="btn btn-ghost">📄 Download CV</a>
+      <a href="#contact" class="btn btn-ghost">✉️ Contact Me</a>
+      <a href="https://github.com/nompumelelonzama" target="_blank" rel="noreferrer" class="btn btn-ghost">⭐ GitHub</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num">4+</div><div class="stat-label">Projects Built</div></div>
+      <div class="stat"><div class="stat-num">2</div><div class="stat-label">Qualifications</div></div>
+      <div class="stat"><div class="stat-num">5+</div><div class="stat-label">Technologies</div></div>
+      <div class="stat"><div class="stat-num">NMU</div><div class="stat-label">Graduate 2025</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     ABOUT
+════════════════════════════════════════════ -->
+<section id="about">
+  <div class="section-inner">
+    <div class="section-label">About Me</div>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <h2 class="section-title">Turning Ideas Into<br><span class="accent">Digital Reality</span></h2>
+        <p>
+          I'm an Information Technology graduate from Nelson Mandela University, specialising in
+          Software Development. My journey in tech is driven by a deep curiosity for AI, smart digital
+          systems, and creating meaningful experiences through code.
+        </p>
+        <p>
+          My experience as a Teacher's Assistant at Progress Secondary School sharpened my communication,
+          organisation, and teamwork skills — qualities I bring to every development project. I thrive
+          in collaborative environments and love solving complex problems with elegant solutions.
+        </p>
+        <p>
+          When I'm not coding, I'm exploring new AI tools, contributing to open-source projects,
+          and staying at the forefront of South African tech innovation.
+        </p>
+        <div class="about-tags">
+          <span class="about-tag">AI & Machine Learning</span>
+          <span class="about-tag">Tourism Technology</span>
+          <span class="about-tag">Smart Systems</span>
+          <span class="about-tag">Web Development</span>
+          <span class="about-tag">Data Analysis</span>
+          <span class="about-tag">NLP</span>
+        </div>
+      </div>
+
+      <div class="about-info-grid reveal reveal-delay-1">
+        <div class="glass-card info-card">
+          <div class="icon">🎓</div>
+          <div class="label">Education</div>
+          <div class="value">NMU Graduate</div>
+        </div>
+        <div class="glass-card info-card">
+          <div class="icon">💼</div>
+          <div class="label">Experience</div>
+          <div class="value">Teacher's Assistant</div>
+        </div>
+        <div class="glass-card info-card">
+          <div class="icon">📍</div>
+          <div class="label">Location</div>
+          <div class="value">South Africa</div>
+        </div>
+        <div class="glass-card info-card">
+          <div class="icon">🚀</div>
+          <div class="label">Focus</div>
+          <div class="value">AI & Software Dev</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SKILLS
+════════════════════════════════════════════ -->
+<section id="skills">
+  <div class="section-inner">
+    <div class="section-label">Skills</div>
+    <h2 class="section-title" style="text-align:center;margin-bottom:48px">
+      Technical <span class="accent">Expertise</span>
+    </h2>
+
+    <div class="skills-grid">
+      <!-- Programming Languages -->
+      <div class="glass-card reveal" style="padding:28px">
+        <div class="skill-category-title">Programming Languages</div>
+        <div class="skill-bar-row" data-level="88">
+          <div class="skill-bar-meta"><span class="skill-name">Python</span><span class="skill-pct">88%</span></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+        <div class="skill-bar-row" data-level="80">
+          <div class="skill-bar-meta"><span class="skill-name">JavaScript</span><span class="skill-pct">80%</span></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+        <div class="skill-bar-row" data-level="92">
+          <div class="skill-bar-meta"><span class="skill-name">HTML5</span><span class="skill-pct">92%</span></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+        <div class="skill-bar-row" data-level="85">
+          <div class="skill-bar-meta"><span class="skill-name">CSS3</span><span class="skill-pct">85%</span></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+        <div class="skill-bar-row" data-level="65">
+          <div class="skill-bar-meta"><span class="skill-name">C#</span><span class="skill-pct">65%</span></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+      </div>
+
+      <!-- Technologies -->
+      <div class="glass-card reveal reveal-delay-1" style="padding:28px">
+        <div class="skill-category-title">Technologies & Tools</div>
+        <div class="skill-bar-row" data-level="82">
+          <div class="skill-bar-meta"><span class="skill-name">Git & GitHub</span><span class="skill-pct">82%</span></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+        <div class="skill-bar-row" data-level="85">
+          <div class="skill-bar-meta"><span class="skill-name">Streamlit</span><span class="skill-pct">85%</span></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+        <div class="skill-bar-row" data-level="80">
+          <div class="skill-bar-meta"><span class="skill-name">AI Integration</span><span class="skill-pct">80%</span></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+        <div class="skill-bar-row" data-level="78">
+          <div class="skill-bar-meta"><span class="skill-name">REST APIs</span><span class="skill-pct">78%</span></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+        <div class="skill-bar-row" data-level="75">
+          <div class="skill-bar-meta"><span class="skill-name">Data Analysis</span><span class="skill-pct">75%</span></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="glass-card reveal reveal-delay-2" style="padding:28px">
+        <div class="skill-category-title">Soft Skills</div>
+        <div class="skill-bar-row" data-level="95">
+          <div class="skill-bar-meta"><span class="skill-name">Problem Solving</span><span class="skill-pct">95%</span></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+        <div class="skill-bar-row" data-level="92">
+          <div class="skill-bar-meta"><span class="skill-name">Teamwork</span><span class="skill-pct">92%</span></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+        <div class="skill-bar-row" data-level="90">
+          <div class="skill-bar-meta"><span class="skill-name">Communication</span><span class="skill-pct">90%</span></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+        <div class="skill-bar-row" data-level="94">
+          <div class="skill-bar-meta"><span class="skill-name">Adaptability</span><span class="skill-pct">94%</span></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+        <div class="skill-bar-row" data-level="88">
+          <div class="skill-bar-meta"><span class="skill-name">Attention to Detail</span><span class="skill-pct">88%</span></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     PROJECTS
+════════════════════════════════════════════ -->
+<section id="projects">
+  <div class="section-inner">
+    <div class="section-label">Projects</div>
+    <h2 class="section-title" style="text-align:center;margin-bottom:16px">
+      Featured <span class="accent">Work</span>
+    </h2>
+
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="ai">AI</button>
+      <button class="filter-btn" data-filter="ml">ML</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- OceanIQ -->
+      <div class="glass-card project-card reveal" data-category="ai web">
+        <div class="project-header">
+          <div class="project-icon" style="background:rgba(14,165,233,0.15);border:1px solid rgba(14,165,233,0.3)">🐠</div>
+          <div>
+            <div class="project-name">OceanIQ Chatbot</div>
+            <span class="project-category" style="background:rgba(14,165,233,0.1);color:#38bdf8;border:1px solid rgba(14,165,233,0.25)">AI</span>
+          </div>
+        </div>
+        <p class="project-desc">
+          An AI-powered marine awareness chatbot educating users about marine life, sustainable fishing,
+          and environmental conservation using modern web technologies.
+        </p>
+        <div class="project-tech">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">AI Integration</span>
+        </div>
+        <div class="project-links">
+          <a class="project-link link-github" href="https://github.com/SANDILE19991111/OceanIQ-Chatbot" target="_blank" rel="noreferrer">⭐ GitHub</a>
+          <a class="project-link link-demo" href="https://github.com/SANDILE19991111/OceanIQ-Chatbot" target="_blank" rel="noreferrer"
+             style="background:rgba(14,165,233,0.12);border-color:rgba(14,165,233,0.35);color:#38bdf8">🚀 View Repo</a>
+        </div>
+      </div>
+
+      <!-- Content Generator -->
+      <div class="glass-card project-card reveal reveal-delay-1" data-category="ai">
+        <div class="project-header">
+          <div class="project-icon" style="background:rgba(139,92,246,0.15);border:1px solid rgba(139,92,246,0.3)">✨</div>
+          <div>
+            <div class="project-name">Content Generator</div>
+            <span class="project-category" style="background:rgba(139,92,246,0.1);color:#a78bfa;border:1px solid rgba(139,92,246,0.25)">AI</span>
+          </div>
+        </div>
+        <p class="project-desc">
+          An AI-powered content studio generating text, images, and code with customisable tone and style
+          controls. Features prompt engineering and multi-modal output capabilities.
+        </p>
+        <div class="project-tech">
+          <span class="tech-tag">AI APIs</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">Web Dev</span>
+          <span class="tech-tag">Prompt Engineering</span>
+        </div>
+        <div class="project-links">
+          <a class="project-link link-github" href="https://github.com/nompumelelonzama/Content-Generator" target="_blank" rel="noreferrer">⭐ GitHub</a>
+          <a class="project-link link-demo" href="https://github.com/nompumelelonzama/Content-Generator" target="_blank" rel="noreferrer"
+             style="background:rgba(139,92,246,0.12);border-color:rgba(139,92,246,0.35);color:#a78bfa">🚀 View Repo</a>
+        </div>
+      </div>
+
+      <!-- Sentiment Analysis -->
+      <div class="glass-card project-card reveal" data-category="ml">
+        <div class="project-header">
+          <div class="project-icon" style="background:rgba(16,185,129,0.15);border:1px solid rgba(16,185,129,0.3)">🧠</div>
+          <div>
+            <div class="project-name">Sentiment Analysis</div>
+            <span class="project-category" style="background:rgba(16,185,129,0.1);color:#34d399;border:1px solid rgba(16,185,129,0.25)">ML</span>
+          </div>
+        </div>
+        <p class="project-desc">
+          A machine learning application analysing emotions and sentiment from user text using Python and
+          NLP techniques. Provides real-time insight into the emotional tone of any input text.
+        </p>
+        <div class="project-tech">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Machine Learning</span>
+          <span class="tech-tag">NLP</span>
+          <span class="tech-tag">Data Analysis</span>
+        </div>
+        <div class="project-links">
+          <a class="project-link link-github" href="https://github.com/nompumelelonzama/Sentiment-Analysis" target="_blank" rel="noreferrer">⭐ GitHub</a>
+          <a class="project-link link-demo" href="https://github.com/nompumelelonzama/Sentiment-Analysis" target="_blank" rel="noreferrer"
+             style="background:rgba(16,185,129,0.12);border-color:rgba(16,185,129,0.35);color:#34d399">🚀 View Repo</a>
+        </div>
+      </div>
+
+      <!-- Tourism Travel -->
+      <div class="glass-card project-card reveal reveal-delay-1" data-category="ai web">
+        <div class="project-header">
+          <div class="project-icon" style="background:rgba(245,158,11,0.15);border:1px solid rgba(245,158,11,0.3)">🌍</div>
+          <div>
+            <div class="project-name">Tourism Travel ZA</div>
+            <span class="project-category" style="background:rgba(245,158,11,0.1);color:#fbbf24;border:1px solid rgba(245,158,11,0.25)">Web</span>
+          </div>
+        </div>
+        <p class="project-desc">
+          A smart end-to-end tourism platform integrating AI, weather APIs, interactive maps, hotel discovery,
+          and travel recommendations for South African destinations. Full role-based system.
+        </p>
+        <div class="project-tech">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Streamlit</span>
+          <span class="tech-tag">APIs</span>
+          <span class="tech-tag">AI Integration</span>
+          <span class="tech-tag">SQLite</span>
+        </div>
+        <div class="project-links">
+          <a class="project-link link-github" href="https://github.com/nompumelelonzama/Tourism_Travel" target="_blank" rel="noreferrer">⭐ GitHub</a>
+          <a class="project-link link-demo" href="https://github.com/nompumelelonzama/Tourism_Travel" target="_blank" rel="noreferrer"
+             style="background:rgba(245,158,11,0.12);border-color:rgba(245,158,11,0.35);color:#fbbf24">🚀 View Repo</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CERTIFICATIONS
+════════════════════════════════════════════ -->
+<section id="certifications">
+  <div class="section-inner">
+    <div class="section-label">Certifications</div>
+    <h2 class="section-title" style="text-align:center;margin-bottom:48px">
+      Credentials &amp; <span class="accent">Qualifications</span>
+    </h2>
+
+    <div class="cert-grid">
+      <div class="glass-card cert-card reveal">
+        <div class="cert-icon">🛡️</div>
+        <div>
+          <div class="cert-title">Cisco Cybersecurity</div>
+          <div class="cert-org">Cisco Networking Academy</div>
+          <span class="cert-year">2024</span>
+        </div>
+      </div>
+      <div class="glass-card cert-card reveal reveal-delay-1">
+        <div class="cert-icon">💻</div>
+        <div>
+          <div class="cert-title">Diploma: Software Development</div>
+          <div class="cert-org">Nelson Mandela University</div>
+          <span class="cert-year">2025</span>
+        </div>
+      </div>
+      <div class="glass-card cert-card reveal reveal-delay-2">
+        <div class="cert-icon">🖥️</div>
+        <div>
+          <div class="cert-title">Higher Cert: IT User Support</div>
+          <div class="cert-org">Nelson Mandela University</div>
+          <span class="cert-year">2021</span>
+        </div>
+      </div>
+      <div class="glass-card cert-card reveal reveal-delay-3">
+        <div class="cert-icon">🌐</div>
+        <div>
+          <div class="cert-title">Web Development Fundamentals</div>
+          <div class="cert-org">Online Certification</div>
+          <span class="cert-year">2023</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     EXPERIENCE & EDUCATION
+════════════════════════════════════════════ -->
+<section id="experience">
+  <div class="section-inner">
+    <div class="section-label">Experience &amp; Education</div>
+    <h2 class="section-title" style="text-align:center;margin-bottom:48px">
+      My <span class="accent">Journey</span>
+    </h2>
+
+    <div class="timeline-section">
+      <div class="timeline-heading">WORK EXPERIENCE</div>
+
+      <div class="glass-card exp-card reveal">
+        <div class="exp-role">Teacher's Assistant</div>
+        <div class="exp-company">Progress Secondary School</div>
+        <span class="exp-badge">Part-time</span>
+        <ul class="exp-list">
+          <li>Classroom management and direct learner support</li>
+          <li>Organising and preparing teaching materials and resources</li>
+          <li>Monitoring and guiding learner behaviour in class</li>
+          <li>Effective communication and teamwork with educators</li>
+          <li>Administrative support and accurate record-keeping</li>
+        </ul>
+      </div>
+
+      <div class="timeline-heading" style="margin-top:48px">EDUCATION</div>
+
+      <div class="edu-list reveal reveal-delay-1">
+        <div class="glass-card edu-card">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-body">
+            <div class="edu-school">Nelson Mandela University</div>
+            <div class="edu-degree">Diploma in Information Technology (Software Development)</div>
+          </div>
+          <div class="edu-year">2022 – 2025</div>
+        </div>
+        <div class="glass-card edu-card">
+          <div class="edu-icon">📜</div>
+          <div class="edu-body">
+            <div class="edu-school">Nelson Mandela University</div>
+            <div class="edu-degree">Higher Certificate in IT (User Support Services)</div>
+          </div>
+          <div class="edu-year">2021</div>
+        </div>
+        <div class="glass-card edu-card">
+          <div class="edu-icon">🏫</div>
+          <div class="edu-body">
+            <div class="edu-school">Ibhongo High School</div>
+            <div class="edu-degree">National Senior Certificate</div>
+          </div>
+          <div class="edu-year">2016</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════════ -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-label">Contact</div>
+    <h2 class="section-title" style="text-align:center;margin-bottom:8px">
+      Let's <span class="accent">Connect</span>
+    </h2>
+    <p style="text-align:center;color:var(--text-muted);margin-bottom:48px">
+      Open to opportunities, collaborations and conversations
+    </p>
+
+    <div class="contact-grid">
+      <div class="contact-links">
+        <a class="glass-card contact-link" href="mailto:nompumelelonzama14@gmail.com">
+          <span class="contact-link-icon">✉️</span>
+          <div>
+            <div class="contact-link-label">Email</div>
+            <div class="contact-link-val">nompumelelonzama14@gmail.com</div>
+          </div>
+        </a>
+        <a class="glass-card contact-link" href="tel:+27621303342">
+          <span class="contact-link-icon">📞</span>
+          <div>
+            <div class="contact-link-label">Phone</div>
+            <div class="contact-link-val">062 130 3342</div>
+          </div>
+        </a>
+        <a class="glass-card contact-link" href="https://github.com/nompumelelonzama" target="_blank" rel="noreferrer">
+          <span class="contact-link-icon">⭐</span>
+          <div>
+            <div class="contact-link-label">GitHub</div>
+            <div class="contact-link-val">github.com/nompumelelonzama</div>
+          </div>
+        </a>
+        <a class="glass-card contact-link" href="https://linkedin.com" target="_blank" rel="noreferrer">
+          <span class="contact-link-icon">💼</span>
+          <div>
+            <div class="contact-link-label">LinkedIn</div>
+            <div class="contact-link-val">Connect on LinkedIn</div>
+          </div>
+        </a>
+      </div>
+
+      <div>
+        <div class="glass-card">
+          <form class="form" id="contactForm">
+            <h3>Send a Message</h3>
+            <input type="text"  id="fname"    placeholder="Your Name"    required />
+            <input type="email" id="femail"   placeholder="Your Email"   required />
+            <input type="text"  id="fsubject" placeholder="Subject"      />
+            <textarea id="fmessage" placeholder="Your message..." rows="5" required></textarea>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">
+              Send Message 🚀
+            </button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">🌊</div>
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out. I'll get back to you soon.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-brand">
+    <span class="accent">NBN</span> · Nompumelelo Blessing Nzama
+  </div>
+  <div class="footer-sub">Software Developer · AI Enthusiast · IT Graduate · South Africa 🌍</div>
+  <div class="footer-links">
+    <a href="https://github.com/nompumelelonzama" target="_blank" rel="noreferrer">GitHub</a>
+    <a href="mailto:nompumelelonzama14@gmail.com">Email</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="footer-copy">© 2025 All rights reserved. Built with HTML · CSS · Python 🖤</div>
+</footer>
+
+<!-- ═══════════════════════════════════════════
+     JAVASCRIPT
+════════════════════════════════════════════ -->
+<script>
+/* ── Particle Canvas ────────────────────────────────── */
+(function () {
+  const canvas = document.getElementById('particles');
+  const ctx = canvas.getContext('2d');
+  let W, H, particles = [];
+
+  function resize() {
+    W = canvas.width  = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  for (let i = 0; i < 55; i++) {
+    particles.push({
+      x: Math.random() * 9999,
+      y: Math.random() * 9999,
+      r: Math.random() * 1.8 + 0.4,
+      vx: (Math.random() - 0.5) * 0.25,
+      vy: (Math.random() - 0.5) * 0.25,
+      a: Math.random() * 0.35 + 0.08,
+      c: ['#38bdf8','#0ea5e9','#7dd3fc','#14b8a6'][Math.floor(Math.random()*4)]
+    });
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    particles.forEach(p => {
+      p.x += p.vx; p.y += p.vy;
+      if (p.x < 0) p.x = W; if (p.x > W) p.x = 0;
+      if (p.y < 0) p.y = H; if (p.y > H) p.y = 0;
+      ctx.beginPath();
+      ctx.arc(p.x % W, p.y % H, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = p.c;
+      ctx.globalAlpha = p.a;
+      ctx.fill();
+    });
+    ctx.globalAlpha = 1;
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+/* ── Typewriter ─────────────────────────────────────── */
+(function () {
+  const el = document.getElementById('typewriter');
+  const words = ['Software Developer','AI Enthusiast','IT Graduate','Problem Solver','Digital Innovator'];
+  let wi = 0, ci = 0, del = false;
+
+  function tick() {
+    const w = words[wi];
+    if (!del) {
+      el.textContent = w.slice(0, ++ci);
+      if (ci === w.length) { del = true; setTimeout(tick, 1800); return; }
+      setTimeout(tick, 80);
+    } else {
+      el.textContent = w.slice(0, --ci);
+      if (ci === 0) { del = false; wi = (wi + 1) % words.length; }
+      setTimeout(tick, del ? 38 : 80);
+    }
+  }
+  tick();
+})();
+
+/* ── Active Nav ─────────────────────────────────────── */
+(function () {
+  const links = document.querySelectorAll('.nav-links a');
+  const sections = ['hero','about','skills','projects','certifications','experience','contact']
+    .map(id => document.getElementById(id));
+
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY + 120;
+    let active = 'hero';
+    sections.forEach(s => { if (s && s.offsetTop <= y) active = s.id; });
+    links.forEach(l => {
+      l.classList.toggle('active', l.getAttribute('href') === '#' + active);
+    });
+  });
+})();
+
+/* ── Skill Bars ─────────────────────────────────────── */
+(function () {
+  const rows = document.querySelectorAll('.skill-bar-row');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const lvl = e.target.dataset.level;
+        e.target.querySelector('.skill-fill').style.width = lvl + '%';
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  rows.forEach(r => obs.observe(r));
+})();
+
+/* ── Scroll Reveal ──────────────────────────────────── */
+(function () {
+  const els = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.12 });
+  els.forEach(e => obs.observe(e));
+})();
+
+/* ── Project Filter ─────────────────────────────────── */
+(function () {
+  const btns  = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.project-card');
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      cards.forEach(c => {
+        const cats = c.dataset.category || '';
+        c.style.display = (f === 'all' || cats.includes(f)) ? '' : 'none';
+      });
+    });
+  });
+})();
+
+/* ── Contact Form ───────────────────────────────────── */
+(function () {
+  const form    = document.getElementById('contactForm');
+  const success = document.getElementById('formSuccess');
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    form.style.display = 'none';
+    success.style.display = 'block';
+  });
+})();
+
+/* ── Smooth scroll for nav ──────────────────────────── */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+  });
+});
+</script>
+
+</body>
+</html>
