@@ -28,7 +28,7 @@ pip install flask
 python server.py
 ```
 
-The browser will open automatically at **http://localhost:5000**
+The browser will open automatically at ** https://nompumelelonzama.github.io/Nompumelelo-Portfolio/**
 
 ### 3. Stop the server
 Press `Ctrl + C` in the terminal.
