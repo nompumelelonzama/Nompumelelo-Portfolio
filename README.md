@@ -1,65 +1,45 @@
 # Nompumelelo Blessing Nzama — Portfolio
 
-A professional dark-themed portfolio website built with **HTML · CSS · Python (Flask)**.
+A personal portfolio website showcasing my skills, projects, certifications, and experience as an IT graduate and software developer.
 
-## 📁 Project Structure
+**Live site:** https://nompumelelonzama.github.io/Nompumelelo-Portfolio/
+
+## About
+
+This portfolio highlights my background in software development, AI-powered applications, and web technologies, along with my education at Nelson Mandela University and my current internship at CAPACITI.
+
+## Sections
+
+- **Welcome / Hero** — introduction and quick links to Resume and Projects
+- **About Me** — background, focus areas, and what I bring to a team
+- **Resume** — technical skills, certifications, work experience, and education
+- **Projects** — featured builds including OpenEx, Deskflow, Sentiment Analysis, and Tourism Travel ZA
+- **Contact** — email, phone, GitHub, and LinkedIn
+
+## Built With
+
+- HTML5
+- CSS3 (custom properties, responsive grid/flexbox layout)
+- Vanilla JavaScript (scroll-based nav highlighting, animated skill bars, project filtering, contact form handling)
+
+## Project Structure
 
 ```
-portfolio/
-├── index.html       ← Main portfolio page
-├── style.css        ← All styles (dark ocean theme)
-├── server.py        ← Python Flask server
-├── profile.jpg      ← Your graduation photo
-├── requirements.txt ← Python dependencies
+Nompumelelo-Portfolio/
+├── index.html      ← Main portfolio page (self-contained: styles inlined)
+├── style.css        ← Reference stylesheet (source of truth for styling)
+├── profile.jpg       ← Profile photo
 └── README.md
 ```
 
-## 🚀 How to Run in VS Code
+> Note: `index.html` as deployed is self-contained (CSS and image inlined) so it works as a single downloadable file. `style.css` is kept in the repo as the editable source.
 
-### 1. Install Python dependencies
-Open the terminal in VS Code (`Ctrl + `` ` ``) and run:
+## Running Locally
 
-```bash
-pip install flask
-```
+Since `index.html` is self-contained, you can simply open it directly in a browser — no server required.
 
-### 2. Start the server
-```bash
-python server.py
-```
+## Contact
 
-The browser will open automatically at ** https://nompumelelonzama.github.io/Nompumelelo-Portfolio/**
-
-### 3. Stop the server
-Press `Ctrl + C` in the terminal.
-
----
-
-## 🌐 Alternative — Open directly (no Python needed)
-You can also just double-click `index.html` to open it directly in your browser.
-Note: The photo may not load this way due to browser security — use the Python server for best results.
-
----
-
-## ✏️ How to Edit
-
-- **Change text content** → edit `index.html`
-- **Change colours / fonts** → edit `style.css`  
-- **Add new projects** → copy a project card block in `index.html` and update the links/text
-- **Replace photo** → replace `profile.jpg` with your new photo (keep the same filename)
-
----
-
-## 📌 Live GitHub Links
-
-| Project | Repository |
-|---|---|
-| OceanIQ Chatbot | https://github.com/SANDILE19991111/OceanIQ-Chatbot |
-| Content Generator | https://github.com/nompumelelonzama/Content-Generator |
-| Sentiment Analysis | https://github.com/nompumelelonzama/Sentiment-Analysis |
-| Tourism Travel ZA | https://github.com/nompumelelonzama/Tourism_Travel |
-| Main GitHub | https://github.com/nompumelelonzama |
-
----
-
-Built with ❤️ — HTML · CSS · Python
+- Email: nompumelelonzama14@gmail.com
+- GitHub: [github.com/nompumelelonzama](https://github.com/nompumelelonzama)
+- LinkedIn: [linkedin.com/in/nompumelelo-nzama-a73163414](https://www.linkedin.com/in/nompumelelo-nzama-a73163414/)
