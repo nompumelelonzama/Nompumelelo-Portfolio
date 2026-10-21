@@ -13,21 +13,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
 
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nompumelelo Blessing Nzama, Portfolio</title>
-  <meta name="description" content="Software Developer | AI Enthusiast | IT Graduate, South Africa" />
-  <style>
-/* ============================================================
-   NOMPUMELELO BLESSING NZAMA — PORTFOLIO
-   Sidebar-profile layout, calm & professional palette
-   ============================================================ */
-
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
-
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
@@ -983,7 +968,88 @@ footer {
 </section>
 </main>
 
+<!-- ═══════════════════════════════════════════
+     JAVASCRIPT
+════════════════════════════════════════════ -->
+<script>
+/* ── Active Nav ─────────────────────────────────────── */
+(function () {
+  const links = document.querySelectorAll('.nav-links a');
+  const sections = ['hero','resume','projects','contact']
+    .map(id => document.getElementById(id));
 
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY + 140;
+    let active = 'hero';
+    sections.forEach(s => { if (s && s.offsetTop <= y) active = s.id; });
+    links.forEach(l => {
+      l.classList.toggle('active', l.getAttribute('href') === '#' + active);
+    });
+  });
+})();
+
+/* ── Skill Bars ─────────────────────────────────────── */
+(function () {
+  const rows = document.querySelectorAll('.skill-bar-row');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const lvl = e.target.dataset.level;
+        e.target.querySelector('.skill-fill').style.width = lvl + '%';
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  rows.forEach(r => obs.observe(r));
+})();
+
+/* ── Scroll Reveal ──────────────────────────────────── */
+(function () {
+  const els = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.12 });
+  els.forEach(e => obs.observe(e));
+})();
+
+/* ── Project Filter ─────────────────────────────────── */
+(function () {
+  const btns  = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.project-card');
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      cards.forEach(c => {
+        const cats = c.dataset.category || '';
+        c.style.display = (f === 'all' || cats.includes(f)) ? '' : 'none';
+      });
+    });
+  });
+})();
+
+/* ── Contact Form ───────────────────────────────────── */
+(function () {
+  const form    = document.getElementById('contactForm');
+  const success = document.getElementById('formSuccess');
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    form.style.display = 'none';
+    success.style.display = 'block';
+  });
+})();
+
+/* ── Smooth scroll for nav ──────────────────────────── */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+  });
+});
+</script>
 
 </body>
 </html>
